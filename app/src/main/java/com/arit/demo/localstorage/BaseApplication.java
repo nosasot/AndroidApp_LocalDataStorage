@@ -26,6 +26,10 @@ public class BaseApplication extends Application {
 //                                    .name("localstorgename.realm")
 //                                    .build();
 
+//        RealmConfiguration config = new RealmConfiguration()
+//                                        .Builder()
+//                                        .name("Local.realm").deleteAll
+
         Realm realm = Realm.getDefaultInstance();
 
 //      User user = realm.createObject(User.class); // Managed Object

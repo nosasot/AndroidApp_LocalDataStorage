@@ -23,8 +23,6 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.tvShowPreference)
     TextView tvShowPref;
 
-    @BindView(R.id.tvShowRealmData)
-    TextView tvShowRealmData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void execute(Realm realm) {
                 User user = realm.where(User.class).findFirst();
-                tvShowRealmData.setText(user.getFirstname());
+                tvShowPref.setText(user.getFirstname());
             }
         });
     }
